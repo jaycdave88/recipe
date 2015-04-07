@@ -28,5 +28,6 @@ group :development, :test do
   gem 'spring'
   gem 'sqlite3'
 	gem 'dotenv-rails'
+	
 end
 
