@@ -12,6 +12,7 @@ class RecipesController < ApplicationController
 
 	def new
 		@recipe = current_user.recipe.build
+		
 	end
 
 	def create
