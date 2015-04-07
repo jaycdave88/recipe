@@ -16,6 +16,8 @@ gem 'bootstrap-sass'
 gem 'paperclip'
 gem 'cocoon'
 gem 'devise'
+gem 'dotenv'
+gem 'aws-sdk'
 
 group :development, :test do
   gem 'byebug'
