@@ -12,5 +12,3 @@ To create an application where a user can view recipes from others as well as cr
 * Paperclip 
 * Devise
 * Bootstrap 
-
-

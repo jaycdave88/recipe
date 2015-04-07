@@ -1,7 +1,8 @@
 class Recipe < ActiveRecord::Base
+	belongs_to :user
+
 	has_many :ingredients
 	has_many :directions
-	belongs_to :user
 
 	accepts_nested_attributes_for :ingredients,
   															reject_if: proc { |attributes| attributes['name'].blank? },
@@ -12,7 +13,6 @@ class Recipe < ActiveRecord::Base
 
   validates :title, :description, :image, presence: true
 
-	has_attached_file :image, :styles => { :medium => "400x400#>", :thumb => "100x100>"}, :default_url => "/images/:style/missing.png"
-	validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
-
+	has_attached_file :image, styles: { :medium => "400x400#" }
+	validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 end

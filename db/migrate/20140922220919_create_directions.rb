@@ -4,8 +4,7 @@ class CreateDirections < ActiveRecord::Migration
       t.text :step
       t.belongs_to :recipe, index: true
 
-      t.timestamps null: false
+      t.timestamps
     end
-    add_foreign_key :directions, :recipes
   end
 end
