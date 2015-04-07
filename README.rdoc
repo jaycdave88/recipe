@@ -8,4 +8,9 @@ To create an application where a user can view recipes from others as well as cr
 ======Goals:
 
 * Work with nested forms 
+* Work with Haml
+* Paperclip 
+* Devise
+* Bootstrap 
+
 
