@@ -15,14 +15,18 @@ gem 'bootstrap-sass'
 gem 'paperclip'
 gem 'cocoon'
 gem 'devise'
-gem 'dotenv'
-gem 'aws-sdk'
+
+group :production do
+	gem 'aws-sdk'
+	gem 'pg'
+	gem 'rails_12factor'
+end
 
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'sqlite3'
-  
+	gem 'dotenv-rails'
 end
 
