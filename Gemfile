@@ -17,7 +17,7 @@ gem 'cocoon'
 gem 'devise'
 
 group :production do
-	gem 'aws-sdk'
+	gem 'aws-sdk', '< 2.0'
 	gem 'pg'
 	gem 'rails_12factor'
 end
